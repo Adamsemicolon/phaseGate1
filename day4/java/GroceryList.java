@@ -19,19 +19,19 @@ String menu = """
 	while(true){
 	String userInput = inputReceiver.nextLine();
 	if("1".equals(userInput)){
-		System.out.print("Add an item");
+		System.out.println("Add an item");
 		userInput = inputReceiver.nextLine();
 		groceryList.add(userInput);
 		break;}
 	else if("2".equals(userInput)){
-		System.out.print("Remove an item");
+		System.out.println("Remove an item");
 		userInput = inputReceiver.nextLine();
 		if(groceryList.contains(userInput)){
 			groceryList.remove(userInput);
 			System.out.println("Removed successfully");
 			break;}
 		else{
-			System.out.print("Not available in list");
+			System.out.println("Not available in list");
 			break;}
 		}
 	else if("0".equals(userInput))return;

@@ -36,11 +36,11 @@ public static String isAddItem(String userInput){
 }
 
 public static String isRemoveItem(String userInput){
-	groceryList.remove(userInput);
 	if(groceryList.contains(userInput)){
-	return "Not available in list";}
+	groceryList.remove(userInput);
+	return "Removed Successfully";}
 	else{
-		return "Removed Successfully";}
+		return "Not available in list";}
 }
 
 public static String isShowAvailableItem(){
